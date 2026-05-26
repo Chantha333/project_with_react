@@ -1,5 +1,6 @@
 import {useEffect,useReducer,useState} from 'react'
 import axios from 'axios';
+import { TextAlignCenter } from 'lucide-react';
 
 const defaultState={
   user:[],
@@ -50,6 +51,10 @@ const About = () => {
   }
   return (
     <div className='user-container'>
+        <div className='center'>
+        <h3>All Users</h3>
+
+        </div>
       {state.user.map(({id,avatar_url,html_url,login})=>{
         return(
           <article key={id} className='user-card'>
