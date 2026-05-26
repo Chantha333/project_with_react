@@ -4,6 +4,7 @@ import Home from "./pages/Home";
 import ProductDetail from "./pages/ProductDetail";
 import Service from "./pages/Service";
 import About from "./pages/About";
+import Accessory from "./pages/Accessory";
  const router= createBrowserRouter([{
   path:"/",
   element:<RouteLayout/>,
@@ -22,7 +23,7 @@ import About from "./pages/About";
     },
     {
       path:"accessories",
-      element: <h3>Accessory</h3>,
+      element: <Accessory/>,
     },
     {
       path:"about",
